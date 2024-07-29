@@ -1,0 +1,30 @@
+2024-07-29 15:47:06,305 - MilwaukeeFileUploader - ERROR - Funciton Error @ProductInfoSheet: 'int' object is not subscriptable
+2024-07-29 15:47:06,310 - MilwaukeeFileUploader - ERROR - Funciton Error @ProductInfoSheet: 'int' object is not subscriptable
+2024-07-29 15:47:06,315 - MilwaukeeFileUploader - ERROR - Funciton Error @ProductInfoSheet: 'int' object is not subscriptable
+2024-07-29 15:47:06,319 - MilwaukeeFileUploader - ERROR - Funciton Error @ProductInfoSheet: 'int' object is not subscriptable
+2024-07-29 15:47:06,324 - MilwaukeeFileUploader - ERROR - Funciton Error @ProductInfoSheet: 'int' object is not subscriptable
+2024-07-29 15:47:06,328 - MilwaukeeFileUploader - ERROR - Funciton Error @ProductInfoSheet: 'int' object is not subscriptable
+2024-07-29 15:47:06,333 - MilwaukeeFileUploader - ERROR - Funciton Error @ProductInfoSheet: 'int' object is not subscriptable
+2024-07-29 15:47:06,337 - MilwaukeeFileUploader - ERROR - Funciton Error @ProductInfoSheet: 'int' object is not subscriptable
+2024-07-29 15:47:06,341 - MilwaukeeFileUploader - ERROR - Funciton Error @ProductInfoSheet: 'int' object is not subscriptable
+2024-07-29 15:47:06,346 - MilwaukeeFileUploader - ERROR - Funciton Error @ProductInfoSheet: 'int' object is not subscriptable
+2024-07-29 15:47:06,349 - MilwaukeeFileUploader - ERROR - Funciton Error @DigitalAssetsSheet: ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,351 - MilwaukeeFileUploader - ERROR - Funciton Error @DigitalAssetsSheet: ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,353 - MilwaukeeFileUploader - ERROR - Funciton Error @DigitalAssetsSheet: ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,354 - MilwaukeeFileUploader - ERROR - Funciton Error @DigitalAssetsSheet: ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,356 - MilwaukeeFileUploader - ERROR - Funciton Error @DigitalAssetsSheet: ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,358 - MilwaukeeFileUploader - ERROR - Funciton Error @DigitalAssetsSheet: ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,360 - MilwaukeeFileUploader - ERROR - Funciton Error @DigitalAssetsSheet: ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,361 - MilwaukeeFileUploader - ERROR - Funciton Error @DigitalAssetsSheet: ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,363 - MilwaukeeFileUploader - ERROR - Funciton Error @DigitalAssetsSheet: ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,364 - MilwaukeeFileUploader - ERROR - Funciton Error @DigitalAssetsSheet: ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,366 - MilwaukeeFileUploader - ERROR - Funciton Error @SpecSheet:Heads : ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,367 - MilwaukeeFileUploader - ERROR - Funciton Error @SpecSheet:Heads : ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,368 - MilwaukeeFileUploader - ERROR - Funciton Error @SpecSheet:Heads : ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,369 - MilwaukeeFileUploader - ERROR - Funciton Error @SpecSheet:Heads : ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,370 - MilwaukeeFileUploader - ERROR - Funciton Error @SpecSheet:Heads : ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,371 - MilwaukeeFileUploader - ERROR - Funciton Error @SpecSheet:Heads : ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,372 - MilwaukeeFileUploader - ERROR - Funciton Error @SpecSheet:Cordless_3 : ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,373 - MilwaukeeFileUploader - ERROR - Funciton Error @SpecSheet:Cordless_3 : ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,375 - MilwaukeeFileUploader - ERROR - Funciton Error @SpecSheet:Speakers : ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,376 - MilwaukeeFileUploader - ERROR - Funciton Error @SpecSheet:Tool Boxes : ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'

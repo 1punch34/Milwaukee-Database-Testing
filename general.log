@@ -1,0 +1,355 @@
+2024-07-26 16:10:35,219 - MilwaukeeFileUploader - INFO - INSERTED INVENTORY row with MFG_Part_Num: 48-37-3218H
+2024-07-26 16:10:35,221 - MilwaukeeFileUploader - ERROR - Error inserting ProductDetails record with id: 1: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'search_keywords, product_name, description, features, includes) 
+        VALUES ' at line 1
+2024-07-26 16:10:35,226 - MilwaukeeFileUploader - INFO - Inserted UOM record with Model NO: 48-37-3218H and uom: EA
+2024-07-26 16:10:35,231 - MilwaukeeFileUploader - INFO - INSERTED INVENTORY row with MFG_Part_Num: 48-37-0722H
+2024-07-26 16:10:35,233 - MilwaukeeFileUploader - ERROR - Error inserting ProductDetails record with id: 2: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'search_keywords, product_name, description, features, includes) 
+        VALUES ' at line 1
+2024-07-26 16:10:35,239 - MilwaukeeFileUploader - INFO - Inserted UOM record with Model NO: 48-37-0722H and uom: EA
+2024-07-26 16:10:35,244 - MilwaukeeFileUploader - INFO - INSERTED INVENTORY row with MFG_Part_Num: MXF372-2XCB
+2024-07-26 16:10:35,246 - MilwaukeeFileUploader - ERROR - Error inserting ProductDetails record with id: 3: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'search_keywords, product_name, description, features, includes) 
+        VALUES ' at line 1
+2024-07-26 16:10:35,257 - MilwaukeeFileUploader - INFO - Inserted UOM record with Model NO: MXF372-2XCB and uom: EA
+2024-07-26 16:10:35,262 - MilwaukeeFileUploader - INFO - INSERTED INVENTORY row with MFG_Part_Num: 2954-20
+2024-07-26 16:10:35,264 - MilwaukeeFileUploader - ERROR - Error inserting ProductDetails record with id: 4: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'search_keywords, product_name, description, features, includes) 
+        VALUES ' at line 1
+2024-07-26 16:10:35,268 - MilwaukeeFileUploader - INFO - Inserted UOM record with Model NO: 2954-20 and uom: EA
+2024-07-26 16:10:35,272 - MilwaukeeFileUploader - INFO - Inserted UOM record with Model NO: 2954-20 and uom: CASE4
+2024-07-26 16:10:35,277 - MilwaukeeFileUploader - INFO - INSERTED INVENTORY row with MFG_Part_Num: 48-37-3222H
+2024-07-26 16:10:35,279 - MilwaukeeFileUploader - ERROR - Error inserting ProductDetails record with id: 5: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'search_keywords, product_name, description, features, includes) 
+        VALUES ' at line 1
+2024-07-26 16:10:35,283 - MilwaukeeFileUploader - INFO - Inserted UOM record with Model NO: 48-37-3222H and uom: EA
+2024-07-26 16:10:35,288 - MilwaukeeFileUploader - INFO - INSERTED INVENTORY row with MFG_Part_Num: 48-22-8427
+2024-07-26 16:10:35,290 - MilwaukeeFileUploader - ERROR - Error inserting ProductDetails record with id: 6: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'search_keywords, product_name, description, features, includes) 
+        VALUES ' at line 1
+2024-07-26 16:10:35,295 - MilwaukeeFileUploader - INFO - Inserted UOM record with Model NO: 48-22-8427 and uom: EA
+2024-07-26 16:10:35,299 - MilwaukeeFileUploader - INFO - Inserted UOM record with Model NO: 48-22-8427 and uom: CASE2
+2024-07-26 16:10:35,304 - MilwaukeeFileUploader - INFO - INSERTED INVENTORY row with MFG_Part_Num: 48-37-1622H
+2024-07-26 16:10:35,306 - MilwaukeeFileUploader - ERROR - Error inserting ProductDetails record with id: 7: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'search_keywords, product_name, description, features, includes) 
+        VALUES ' at line 1
+2024-07-26 16:10:35,311 - MilwaukeeFileUploader - INFO - Inserted UOM record with Model NO: 48-37-1622H and uom: EA
+2024-07-26 16:10:35,316 - MilwaukeeFileUploader - INFO - INSERTED INVENTORY row with MFG_Part_Num: 48-37-1618H
+2024-07-26 16:10:35,318 - MilwaukeeFileUploader - ERROR - Error inserting ProductDetails record with id: 8: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'search_keywords, product_name, description, features, includes) 
+        VALUES ' at line 1
+2024-07-26 16:10:35,323 - MilwaukeeFileUploader - INFO - Inserted UOM record with Model NO: 48-37-1618H and uom: EA
+2024-07-26 16:10:35,328 - MilwaukeeFileUploader - INFO - INSERTED INVENTORY row with MFG_Part_Num: MXF372-2XC
+2024-07-26 16:10:35,330 - MilwaukeeFileUploader - ERROR - Error inserting ProductDetails record with id: 9: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'search_keywords, product_name, description, features, includes) 
+        VALUES ' at line 1
+2024-07-26 16:10:35,334 - MilwaukeeFileUploader - INFO - Inserted UOM record with Model NO: MXF372-2XC and uom: EA
+2024-07-26 16:10:35,339 - MilwaukeeFileUploader - INFO - INSERTED INVENTORY row with MFG_Part_Num: 48-37-0718H
+2024-07-26 16:10:35,340 - MilwaukeeFileUploader - ERROR - Error inserting ProductDetails record with id: 10: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'search_keywords, product_name, description, features, includes) 
+        VALUES ' at line 1
+2024-07-26 16:10:35,344 - MilwaukeeFileUploader - INFO - Inserted UOM record with Model NO: 48-37-0718H and uom: EA
+2024-07-26 16:10:35,348 - MilwaukeeFileUploader - ERROR - Error inserting into Inventory for modelno: 48-37-3218H: 1062 (23000): Duplicate entry '48-37-3218H' for key 'inventory.MFG_Part_Number'
+2024-07-26 16:10:35,350 - MilwaukeeFileUploader - ERROR - Error inserting into Inventory for modelno: 48-37-0722H: 1062 (23000): Duplicate entry '48-37-0722H' for key 'inventory.MFG_Part_Number'
+2024-07-26 16:10:35,352 - MilwaukeeFileUploader - ERROR - Error inserting into Inventory for modelno: MXF372-2XCB: 1062 (23000): Duplicate entry 'MXF372-2XCB' for key 'inventory.MFG_Part_Number'
+2024-07-26 16:10:35,354 - MilwaukeeFileUploader - ERROR - Error inserting into Inventory for modelno: 2954-20: 1062 (23000): Duplicate entry '2954-20' for key 'inventory.MFG_Part_Number'
+2024-07-26 16:10:35,355 - MilwaukeeFileUploader - ERROR - Error inserting into Inventory for modelno: 48-37-3222H: 1062 (23000): Duplicate entry '48-37-3222H' for key 'inventory.MFG_Part_Number'
+2024-07-26 16:10:35,357 - MilwaukeeFileUploader - ERROR - Error inserting into Inventory for modelno: 48-22-8427: 1062 (23000): Duplicate entry '48-22-8427' for key 'inventory.MFG_Part_Number'
+2024-07-26 16:10:35,359 - MilwaukeeFileUploader - ERROR - Error inserting into Inventory for modelno: 48-37-1622H: 1062 (23000): Duplicate entry '48-37-1622H' for key 'inventory.MFG_Part_Number'
+2024-07-26 16:10:35,361 - MilwaukeeFileUploader - ERROR - Error inserting into Inventory for modelno: 48-37-1618H: 1062 (23000): Duplicate entry '48-37-1618H' for key 'inventory.MFG_Part_Number'
+2024-07-26 16:10:35,363 - MilwaukeeFileUploader - ERROR - Error inserting into Inventory for modelno: MXF372-2XC: 1062 (23000): Duplicate entry 'MXF372-2XC' for key 'inventory.MFG_Part_Number'
+2024-07-26 16:10:35,364 - MilwaukeeFileUploader - ERROR - Error inserting into Inventory for modelno: 48-37-0718H: 1062 (23000): Duplicate entry '48-37-0718H' for key 'inventory.MFG_Part_Number'
+2024-07-26 16:10:35,366 - MilwaukeeFileUploader - ERROR - Error inserting into Inventory for MFG_Part_Number: 48-37-3218H: 1062 (23000): Duplicate entry '48-37-3218H' for key 'inventory.MFG_Part_Number'
+2024-07-26 16:10:35,367 - MilwaukeeFileUploader - ERROR - Error inserting into Inventory for MFG_Part_Number: 48-37-0722H: 1062 (23000): Duplicate entry '48-37-0722H' for key 'inventory.MFG_Part_Number'
+2024-07-26 16:10:35,369 - MilwaukeeFileUploader - ERROR - Error inserting into Inventory for MFG_Part_Number: 48-37-3222H: 1062 (23000): Duplicate entry '48-37-3222H' for key 'inventory.MFG_Part_Number'
+2024-07-26 16:10:35,370 - MilwaukeeFileUploader - ERROR - Error inserting into Inventory for MFG_Part_Number: 48-37-1622H: 1062 (23000): Duplicate entry '48-37-1622H' for key 'inventory.MFG_Part_Number'
+2024-07-26 16:10:35,372 - MilwaukeeFileUploader - ERROR - Error inserting into Inventory for MFG_Part_Number: 48-37-1618H: 1062 (23000): Duplicate entry '48-37-1618H' for key 'inventory.MFG_Part_Number'
+2024-07-26 16:10:35,373 - MilwaukeeFileUploader - ERROR - Error inserting into Inventory for MFG_Part_Number: 48-37-0718H: 1062 (23000): Duplicate entry '48-37-0718H' for key 'inventory.MFG_Part_Number'
+2024-07-26 16:10:35,375 - MilwaukeeFileUploader - ERROR - Error inserting into Inventory for MFG_Part_Number: MXF372-2XCB: 1062 (23000): Duplicate entry 'MXF372-2XCB' for key 'inventory.MFG_Part_Number'
+2024-07-26 16:10:35,377 - MilwaukeeFileUploader - ERROR - Error inserting into Inventory for MFG_Part_Number: MXF372-2XC: 1062 (23000): Duplicate entry 'MXF372-2XC' for key 'inventory.MFG_Part_Number'
+2024-07-26 16:10:35,378 - MilwaukeeFileUploader - ERROR - Error inserting into Inventory for MFG_Part_Number: 2954-20: 1062 (23000): Duplicate entry '2954-20' for key 'inventory.MFG_Part_Number'
+2024-07-26 16:10:35,380 - MilwaukeeFileUploader - ERROR - Error inserting into Inventory for MFG_Part_Number: 48-22-8427: 1062 (23000): Duplicate entry '48-22-8427' for key 'inventory.MFG_Part_Number'
+2024-07-26 16:25:27,133 - MilwaukeeFileUploader - INFO - UPDATED INVENTORY row with MFG_Part_Num: 48-37-3218H
+2024-07-26 16:25:27,147 - MilwaukeeFileUploader - INFO - Inserted ProductDetails record with id: 1
+2024-07-26 16:25:27,149 - MilwaukeeFileUploader - INFO - Updated UOM record with ModelNo: 48-37-3218H and uom: EA
+2024-07-26 16:25:27,152 - MilwaukeeFileUploader - INFO - UPDATED INVENTORY row with MFG_Part_Num: 48-37-0722H
+2024-07-26 16:25:27,157 - MilwaukeeFileUploader - INFO - Inserted ProductDetails record with id: 2
+2024-07-26 16:25:27,160 - MilwaukeeFileUploader - INFO - Updated UOM record with ModelNo: 48-37-0722H and uom: EA
+2024-07-26 16:25:27,162 - MilwaukeeFileUploader - INFO - UPDATED INVENTORY row with MFG_Part_Num: MXF372-2XCB
+2024-07-26 16:25:27,168 - MilwaukeeFileUploader - INFO - Inserted ProductDetails record with id: 3
+2024-07-26 16:25:27,170 - MilwaukeeFileUploader - INFO - Updated UOM record with ModelNo: MXF372-2XCB and uom: EA
+2024-07-26 16:25:27,172 - MilwaukeeFileUploader - INFO - UPDATED INVENTORY row with MFG_Part_Num: 2954-20
+2024-07-26 16:25:27,177 - MilwaukeeFileUploader - INFO - Inserted ProductDetails record with id: 4
+2024-07-26 16:25:27,179 - MilwaukeeFileUploader - INFO - Updated UOM record with ModelNo: 2954-20 and uom: EA
+2024-07-26 16:25:27,181 - MilwaukeeFileUploader - INFO - Updated UOM record with ModelNo: 2954-20 and uom: CASE4
+2024-07-26 16:25:27,184 - MilwaukeeFileUploader - INFO - UPDATED INVENTORY row with MFG_Part_Num: 48-37-3222H
+2024-07-26 16:25:27,188 - MilwaukeeFileUploader - INFO - Inserted ProductDetails record with id: 5
+2024-07-26 16:25:27,190 - MilwaukeeFileUploader - INFO - Updated UOM record with ModelNo: 48-37-3222H and uom: EA
+2024-07-26 16:25:27,192 - MilwaukeeFileUploader - INFO - UPDATED INVENTORY row with MFG_Part_Num: 48-22-8427
+2024-07-26 16:25:27,197 - MilwaukeeFileUploader - INFO - Inserted ProductDetails record with id: 6
+2024-07-26 16:25:27,199 - MilwaukeeFileUploader - INFO - Updated UOM record with ModelNo: 48-22-8427 and uom: EA
+2024-07-26 16:25:27,201 - MilwaukeeFileUploader - INFO - Updated UOM record with ModelNo: 48-22-8427 and uom: CASE2
+2024-07-26 16:25:27,203 - MilwaukeeFileUploader - INFO - UPDATED INVENTORY row with MFG_Part_Num: 48-37-1622H
+2024-07-26 16:25:27,207 - MilwaukeeFileUploader - INFO - Inserted ProductDetails record with id: 7
+2024-07-26 16:25:27,209 - MilwaukeeFileUploader - INFO - Updated UOM record with ModelNo: 48-37-1622H and uom: EA
+2024-07-26 16:25:27,211 - MilwaukeeFileUploader - INFO - UPDATED INVENTORY row with MFG_Part_Num: 48-37-1618H
+2024-07-26 16:25:27,215 - MilwaukeeFileUploader - INFO - Inserted ProductDetails record with id: 8
+2024-07-26 16:25:27,218 - MilwaukeeFileUploader - INFO - Updated UOM record with ModelNo: 48-37-1618H and uom: EA
+2024-07-26 16:25:27,220 - MilwaukeeFileUploader - INFO - UPDATED INVENTORY row with MFG_Part_Num: MXF372-2XC
+2024-07-26 16:25:27,225 - MilwaukeeFileUploader - INFO - Inserted ProductDetails record with id: 9
+2024-07-26 16:25:27,227 - MilwaukeeFileUploader - INFO - Updated UOM record with ModelNo: MXF372-2XC and uom: EA
+2024-07-26 16:25:27,229 - MilwaukeeFileUploader - INFO - UPDATED INVENTORY row with MFG_Part_Num: 48-37-0718H
+2024-07-26 16:25:27,235 - MilwaukeeFileUploader - INFO - Inserted ProductDetails record with id: 10
+2024-07-26 16:25:27,237 - MilwaukeeFileUploader - INFO - Updated UOM record with ModelNo: 48-37-0718H and uom: EA
+2024-07-26 16:25:27,243 - MilwaukeeFileUploader - INFO - Updated Digital assets for record with modelno: 48-37-3218H
+2024-07-26 16:25:27,248 - MilwaukeeFileUploader - INFO - Updated Digital assets for record with modelno: 48-37-0722H
+2024-07-26 16:25:27,254 - MilwaukeeFileUploader - INFO - Updated Digital assets for record with modelno: MXF372-2XCB
+2024-07-26 16:25:27,263 - MilwaukeeFileUploader - INFO - Updated Digital assets for record with modelno: 2954-20
+2024-07-26 16:25:27,268 - MilwaukeeFileUploader - INFO - Updated Digital assets for record with modelno: 48-37-3222H
+2024-07-26 16:25:27,273 - MilwaukeeFileUploader - INFO - Updated Digital assets for record with modelno: 48-22-8427
+2024-07-26 16:25:27,277 - MilwaukeeFileUploader - INFO - Updated Digital assets for record with modelno: 48-37-1622H
+2024-07-26 16:25:27,282 - MilwaukeeFileUploader - INFO - Updated Digital assets for record with modelno: 48-37-1618H
+2024-07-26 16:25:27,287 - MilwaukeeFileUploader - INFO - Updated Digital assets for record with modelno: MXF372-2XC
+2024-07-26 16:25:27,291 - MilwaukeeFileUploader - INFO - Updated Digital assets for record with modelno: 48-37-0718H
+2024-07-26 16:25:27,296 - MilwaukeeFileUploader - INFO - UPDATED SPECS for record with modelno: 48-37-3218H
+2024-07-26 16:25:27,300 - MilwaukeeFileUploader - INFO - UPDATED SPECS for record with modelno: 48-37-0722H
+2024-07-26 16:25:27,304 - MilwaukeeFileUploader - INFO - UPDATED SPECS for record with modelno: 48-37-3222H
+2024-07-26 16:25:27,308 - MilwaukeeFileUploader - INFO - UPDATED SPECS for record with modelno: 48-37-1622H
+2024-07-26 16:25:27,312 - MilwaukeeFileUploader - INFO - UPDATED SPECS for record with modelno: 48-37-1618H
+2024-07-26 16:25:27,316 - MilwaukeeFileUploader - INFO - UPDATED SPECS for record with modelno: 48-37-0718H
+2024-07-26 16:25:27,321 - MilwaukeeFileUploader - INFO - UPDATED SPECS for record with modelno: MXF372-2XCB
+2024-07-26 16:25:27,326 - MilwaukeeFileUploader - INFO - UPDATED SPECS for record with modelno: MXF372-2XC
+2024-07-26 16:25:27,330 - MilwaukeeFileUploader - INFO - UPDATED SPECS for record with modelno: 2954-20
+2024-07-26 16:25:27,334 - MilwaukeeFileUploader - INFO - UPDATED SPECS for record with modelno: 48-22-8427
+2024-07-27 11:04:09,243 - MilwaukeeFileUploader - INFO - FILE OPENED
+2024-07-27 11:30:21,197 - MilwaukeeFileUploader - INFO - FILE OPENED
+2024-07-27 11:30:21,289 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-3218H: 1146 (42S02): Table 'productdata.products' doesn't exist
+2024-07-27 11:30:21,292 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-0722H: 1146 (42S02): Table 'productdata.products' doesn't exist
+2024-07-27 11:30:21,295 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: MXF372-2XCB: 1146 (42S02): Table 'productdata.products' doesn't exist
+2024-07-27 11:30:21,297 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 2954-20: 1146 (42S02): Table 'productdata.products' doesn't exist
+2024-07-27 11:30:21,300 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-3222H: 1146 (42S02): Table 'productdata.products' doesn't exist
+2024-07-27 11:30:21,302 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-22-8427: 1146 (42S02): Table 'productdata.products' doesn't exist
+2024-07-27 11:30:21,305 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-1622H: 1146 (42S02): Table 'productdata.products' doesn't exist
+2024-07-27 11:30:21,306 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-1618H: 1146 (42S02): Table 'productdata.products' doesn't exist
+2024-07-27 11:30:21,309 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: MXF372-2XC: 1146 (42S02): Table 'productdata.products' doesn't exist
+2024-07-27 11:30:21,311 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-0718H: 1146 (42S02): Table 'productdata.products' doesn't exist
+2024-07-27 11:31:13,364 - MilwaukeeFileUploader - INFO - FILE OPENED
+2024-07-27 11:31:13,409 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-3218H: 1054 (42S22): Unknown column 'MFG_Part_Number' in 'where clause'
+2024-07-27 11:31:13,412 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-0722H: 1054 (42S22): Unknown column 'MFG_Part_Number' in 'where clause'
+2024-07-27 11:31:13,414 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: MXF372-2XCB: 1054 (42S22): Unknown column 'MFG_Part_Number' in 'where clause'
+2024-07-27 11:31:13,416 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 2954-20: 1054 (42S22): Unknown column 'MFG_Part_Number' in 'where clause'
+2024-07-27 11:31:13,419 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-3222H: 1054 (42S22): Unknown column 'MFG_Part_Number' in 'where clause'
+2024-07-27 11:31:13,421 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-22-8427: 1054 (42S22): Unknown column 'MFG_Part_Number' in 'where clause'
+2024-07-27 11:31:13,423 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-1622H: 1054 (42S22): Unknown column 'MFG_Part_Number' in 'where clause'
+2024-07-27 11:31:13,426 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-1618H: 1054 (42S22): Unknown column 'MFG_Part_Number' in 'where clause'
+2024-07-27 11:31:13,428 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: MXF372-2XC: 1054 (42S22): Unknown column 'MFG_Part_Number' in 'where clause'
+2024-07-27 11:31:13,430 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-0718H: 1054 (42S22): Unknown column 'MFG_Part_Number' in 'where clause'
+2024-07-27 11:31:46,164 - MilwaukeeFileUploader - INFO - FILE OPENED
+2024-07-27 11:31:46,210 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-3218H: 1048 (23000): Column 'CountryCode' cannot be null
+2024-07-27 11:31:46,213 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-0722H: 1048 (23000): Column 'CountryCode' cannot be null
+2024-07-27 11:31:46,216 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: MXF372-2XCB: 1048 (23000): Column 'CountryCode' cannot be null
+2024-07-27 11:31:46,219 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 2954-20: 1048 (23000): Column 'CountryCode' cannot be null
+2024-07-27 11:31:46,221 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-3222H: 1048 (23000): Column 'CountryCode' cannot be null
+2024-07-27 11:31:46,224 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-22-8427: 1048 (23000): Column 'CountryCode' cannot be null
+2024-07-27 11:31:46,226 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-1622H: 1048 (23000): Column 'CountryCode' cannot be null
+2024-07-27 11:31:46,229 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-1618H: 1048 (23000): Column 'CountryCode' cannot be null
+2024-07-27 11:31:46,231 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: MXF372-2XC: 1048 (23000): Column 'CountryCode' cannot be null
+2024-07-27 11:31:46,233 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-0718H: 1048 (23000): Column 'CountryCode' cannot be null
+2024-07-27 11:32:47,631 - MilwaukeeFileUploader - INFO - FILE OPENED
+2024-07-27 11:32:47,685 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-3218H: 1048 (23000): Column 'CountryCode' cannot be null
+2024-07-27 11:32:47,688 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-0722H: 1048 (23000): Column 'CountryCode' cannot be null
+2024-07-27 11:32:47,691 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: MXF372-2XCB: 1048 (23000): Column 'CountryCode' cannot be null
+2024-07-27 11:32:47,693 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 2954-20: 1048 (23000): Column 'CountryCode' cannot be null
+2024-07-27 11:32:47,696 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-3222H: 1048 (23000): Column 'CountryCode' cannot be null
+2024-07-27 11:32:47,698 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-22-8427: 1048 (23000): Column 'CountryCode' cannot be null
+2024-07-27 11:32:47,701 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-1622H: 1048 (23000): Column 'CountryCode' cannot be null
+2024-07-27 11:32:47,703 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-1618H: 1048 (23000): Column 'CountryCode' cannot be null
+2024-07-27 11:32:47,706 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: MXF372-2XC: 1048 (23000): Column 'CountryCode' cannot be null
+2024-07-27 11:32:47,708 - QueryModule - ERROR - Error updating Inventory record with MFG_Part_Number: 48-37-0718H: 1048 (23000): Column 'CountryCode' cannot be null
+2024-07-27 11:33:26,540 - MilwaukeeFileUploader - INFO - FILE OPENED
+2024-07-27 11:33:26,597 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-3218H
+2024-07-27 11:33:26,604 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-0722H
+2024-07-27 11:33:26,609 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: MXF372-2XCB
+2024-07-27 11:33:26,615 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 2954-20
+2024-07-27 11:33:26,620 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-3222H
+2024-07-27 11:33:26,629 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-22-8427
+2024-07-27 11:33:26,636 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-1622H
+2024-07-27 11:33:26,641 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-1618H
+2024-07-27 11:33:26,646 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: MXF372-2XC
+2024-07-27 11:33:26,651 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-0718H
+2024-07-27 12:07:38,714 - MilwaukeeFileUploader - INFO - FILE OPENED
+2024-07-27 12:07:38,775 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-3218H
+2024-07-27 12:07:38,778 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-3218H
+2024-07-27 12:07:38,781 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-0722H
+2024-07-27 12:07:38,784 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-0722H
+2024-07-27 12:07:38,787 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: MXF372-2XCB
+2024-07-27 12:07:38,790 - QueryModule - INFO - Updated ProductDetails record with modelno: MXF372-2XCB
+2024-07-27 12:07:38,793 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 2954-20
+2024-07-27 12:07:38,796 - QueryModule - INFO - Updated ProductDetails record with modelno: 2954-20
+2024-07-27 12:07:38,798 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-3222H
+2024-07-27 12:07:38,801 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-3222H
+2024-07-27 12:07:38,804 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-22-8427
+2024-07-27 12:07:38,806 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-22-8427
+2024-07-27 12:07:38,809 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-1622H
+2024-07-27 12:07:38,811 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-1622H
+2024-07-27 12:07:38,814 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-1618H
+2024-07-27 12:07:38,817 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-1618H
+2024-07-27 12:07:38,820 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: MXF372-2XC
+2024-07-27 12:07:38,822 - QueryModule - INFO - Updated ProductDetails record with modelno: MXF372-2XC
+2024-07-27 12:07:38,825 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-0718H
+2024-07-27 12:07:38,827 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-0718H
+2024-07-27 12:08:50,626 - MilwaukeeFileUploader - INFO - FILE OPENED
+2024-07-27 12:08:50,681 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-3218H
+2024-07-27 12:08:50,684 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-3218H
+2024-07-27 12:08:50,686 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-0722H
+2024-07-27 12:08:50,689 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-0722H
+2024-07-27 12:08:50,691 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: MXF372-2XCB
+2024-07-27 12:08:50,694 - QueryModule - INFO - Updated ProductDetails record with modelno: MXF372-2XCB
+2024-07-27 12:08:50,697 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 2954-20
+2024-07-27 12:08:50,699 - QueryModule - INFO - Updated ProductDetails record with modelno: 2954-20
+2024-07-27 12:08:50,702 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-3222H
+2024-07-27 12:08:50,704 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-3222H
+2024-07-27 12:08:50,707 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-22-8427
+2024-07-27 12:08:50,710 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-22-8427
+2024-07-27 12:08:50,713 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-1622H
+2024-07-27 12:08:50,716 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-1622H
+2024-07-27 12:08:50,719 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-1618H
+2024-07-27 12:08:50,722 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-1618H
+2024-07-27 12:08:50,724 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: MXF372-2XC
+2024-07-27 12:08:50,727 - QueryModule - INFO - Updated ProductDetails record with modelno: MXF372-2XC
+2024-07-27 12:08:50,730 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-0718H
+2024-07-27 12:08:50,733 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-0718H
+2024-07-29 15:47:06,196 - MilwaukeeFileUploader - INFO - FILE OPENED
+2024-07-29 15:47:06,302 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-3218H
+2024-07-29 15:47:06,305 - MilwaukeeFileUploader - ERROR - Funciton Error @ProductInfoSheet: 'int' object is not subscriptable
+2024-07-29 15:47:06,309 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-0722H
+2024-07-29 15:47:06,310 - MilwaukeeFileUploader - ERROR - Funciton Error @ProductInfoSheet: 'int' object is not subscriptable
+2024-07-29 15:47:06,313 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: MXF372-2XCB
+2024-07-29 15:47:06,315 - MilwaukeeFileUploader - ERROR - Funciton Error @ProductInfoSheet: 'int' object is not subscriptable
+2024-07-29 15:47:06,318 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 2954-20
+2024-07-29 15:47:06,319 - MilwaukeeFileUploader - ERROR - Funciton Error @ProductInfoSheet: 'int' object is not subscriptable
+2024-07-29 15:47:06,322 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-3222H
+2024-07-29 15:47:06,324 - MilwaukeeFileUploader - ERROR - Funciton Error @ProductInfoSheet: 'int' object is not subscriptable
+2024-07-29 15:47:06,327 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-22-8427
+2024-07-29 15:47:06,328 - MilwaukeeFileUploader - ERROR - Funciton Error @ProductInfoSheet: 'int' object is not subscriptable
+2024-07-29 15:47:06,331 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-1622H
+2024-07-29 15:47:06,333 - MilwaukeeFileUploader - ERROR - Funciton Error @ProductInfoSheet: 'int' object is not subscriptable
+2024-07-29 15:47:06,335 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-1618H
+2024-07-29 15:47:06,337 - MilwaukeeFileUploader - ERROR - Funciton Error @ProductInfoSheet: 'int' object is not subscriptable
+2024-07-29 15:47:06,339 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: MXF372-2XC
+2024-07-29 15:47:06,341 - MilwaukeeFileUploader - ERROR - Funciton Error @ProductInfoSheet: 'int' object is not subscriptable
+2024-07-29 15:47:06,344 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-0718H
+2024-07-29 15:47:06,346 - MilwaukeeFileUploader - ERROR - Funciton Error @ProductInfoSheet: 'int' object is not subscriptable
+2024-07-29 15:47:06,349 - MilwaukeeFileUploader - ERROR - Funciton Error @DigitalAssetsSheet: ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,351 - MilwaukeeFileUploader - ERROR - Funciton Error @DigitalAssetsSheet: ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,353 - MilwaukeeFileUploader - ERROR - Funciton Error @DigitalAssetsSheet: ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,354 - MilwaukeeFileUploader - ERROR - Funciton Error @DigitalAssetsSheet: ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,356 - MilwaukeeFileUploader - ERROR - Funciton Error @DigitalAssetsSheet: ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,358 - MilwaukeeFileUploader - ERROR - Funciton Error @DigitalAssetsSheet: ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,360 - MilwaukeeFileUploader - ERROR - Funciton Error @DigitalAssetsSheet: ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,361 - MilwaukeeFileUploader - ERROR - Funciton Error @DigitalAssetsSheet: ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,363 - MilwaukeeFileUploader - ERROR - Funciton Error @DigitalAssetsSheet: ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,364 - MilwaukeeFileUploader - ERROR - Funciton Error @DigitalAssetsSheet: ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,366 - MilwaukeeFileUploader - ERROR - Funciton Error @SpecSheet:Heads : ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,367 - MilwaukeeFileUploader - ERROR - Funciton Error @SpecSheet:Heads : ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,368 - MilwaukeeFileUploader - ERROR - Funciton Error @SpecSheet:Heads : ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,369 - MilwaukeeFileUploader - ERROR - Funciton Error @SpecSheet:Heads : ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,370 - MilwaukeeFileUploader - ERROR - Funciton Error @SpecSheet:Heads : ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,371 - MilwaukeeFileUploader - ERROR - Funciton Error @SpecSheet:Heads : ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,372 - MilwaukeeFileUploader - ERROR - Funciton Error @SpecSheet:Cordless_3 : ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,373 - MilwaukeeFileUploader - ERROR - Funciton Error @SpecSheet:Cordless_3 : ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,375 - MilwaukeeFileUploader - ERROR - Funciton Error @SpecSheet:Speakers : ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:47:06,376 - MilwaukeeFileUploader - ERROR - Funciton Error @SpecSheet:Tool Boxes : ProductDetailsRecord.__init__() missing 1 required positional argument: 'inventory_id'
+2024-07-29 15:52:43,159 - MilwaukeeFileUploader - INFO - FILE OPENED
+2024-07-29 15:52:43,211 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-3218H
+2024-07-29 15:52:43,216 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-3218H
+2024-07-29 15:52:43,219 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-0722H
+2024-07-29 15:52:43,223 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-0722H
+2024-07-29 15:52:43,226 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: MXF372-2XCB
+2024-07-29 15:52:43,229 - QueryModule - INFO - Updated ProductDetails record with modelno: MXF372-2XCB
+2024-07-29 15:52:43,233 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 2954-20
+2024-07-29 15:52:43,236 - QueryModule - INFO - Updated ProductDetails record with modelno: 2954-20
+2024-07-29 15:52:43,239 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-3222H
+2024-07-29 15:52:43,243 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-3222H
+2024-07-29 15:52:43,245 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-22-8427
+2024-07-29 15:52:43,248 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-22-8427
+2024-07-29 15:52:43,252 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-1622H
+2024-07-29 15:52:43,255 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-1622H
+2024-07-29 15:52:43,258 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-1618H
+2024-07-29 15:52:43,261 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-1618H
+2024-07-29 15:52:43,265 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: MXF372-2XC
+2024-07-29 15:52:43,268 - QueryModule - INFO - Updated ProductDetails record with modelno: MXF372-2XC
+2024-07-29 15:52:43,271 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-0718H
+2024-07-29 15:52:43,274 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-0718H
+2024-07-29 15:52:43,279 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-3218H
+2024-07-29 15:52:43,281 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-0722H
+2024-07-29 15:52:43,284 - QueryModule - INFO - Updated ProductDetails record with modelno: MXF372-2XCB
+2024-07-29 15:52:43,287 - QueryModule - INFO - Updated ProductDetails record with modelno: 2954-20
+2024-07-29 15:52:43,290 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-3222H
+2024-07-29 15:52:43,294 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-22-8427
+2024-07-29 15:52:43,296 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-1622H
+2024-07-29 15:52:43,299 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-1618H
+2024-07-29 15:52:43,302 - QueryModule - INFO - Updated ProductDetails record with modelno: MXF372-2XC
+2024-07-29 15:52:43,304 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-0718H
+2024-07-29 15:52:43,306 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-3218H
+2024-07-29 15:52:43,308 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-0722H
+2024-07-29 15:52:43,310 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-3222H
+2024-07-29 15:52:43,312 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-1622H
+2024-07-29 15:52:43,314 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-1618H
+2024-07-29 15:52:43,316 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-0718H
+2024-07-29 15:52:43,318 - QueryModule - INFO - Updated ProductDetails record with modelno: MXF372-2XCB
+2024-07-29 15:52:43,319 - QueryModule - INFO - Updated ProductDetails record with modelno: MXF372-2XC
+2024-07-29 15:52:43,321 - QueryModule - INFO - Updated ProductDetails record with modelno: 2954-20
+2024-07-29 15:52:43,323 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-22-8427
+2024-07-29 15:58:22,421 - MilwaukeeFileUploader - INFO - FILE OPENED
+2024-07-29 15:58:22,470 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-3218H
+2024-07-29 15:58:22,473 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-3218H
+2024-07-29 15:58:22,476 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-0722H
+2024-07-29 15:58:22,479 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-0722H
+2024-07-29 15:58:22,482 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: MXF372-2XCB
+2024-07-29 15:58:22,484 - QueryModule - INFO - Updated ProductDetails record with modelno: MXF372-2XCB
+2024-07-29 15:58:22,487 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 2954-20
+2024-07-29 15:58:22,490 - QueryModule - INFO - Updated ProductDetails record with modelno: 2954-20
+2024-07-29 15:58:22,492 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-3222H
+2024-07-29 15:58:22,495 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-3222H
+2024-07-29 15:58:22,498 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-22-8427
+2024-07-29 15:58:22,500 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-22-8427
+2024-07-29 15:58:22,503 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-1622H
+2024-07-29 15:58:22,505 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-1622H
+2024-07-29 15:58:22,508 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-1618H
+2024-07-29 15:58:22,510 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-1618H
+2024-07-29 15:58:22,513 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: MXF372-2XC
+2024-07-29 15:58:22,515 - QueryModule - INFO - Updated ProductDetails record with modelno: MXF372-2XC
+2024-07-29 15:58:22,518 - QueryModule - INFO - Updated Inventory record with MFG_Part_Number: 48-37-0718H
+2024-07-29 15:58:22,520 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-0718H
+2024-07-29 15:58:22,524 - MilwaukeeFileUploader - INFO - UPDATING Digital Assets for model no 48-37-3218H
+2024-07-29 15:58:22,525 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-3218H
+2024-07-29 15:58:22,527 - MilwaukeeFileUploader - INFO - UPDATING Digital Assets for model no 48-37-0722H
+2024-07-29 15:58:22,528 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-0722H
+2024-07-29 15:58:22,529 - MilwaukeeFileUploader - INFO - UPDATING Digital Assets for model no MXF372-2XCB
+2024-07-29 15:58:22,531 - QueryModule - INFO - Updated ProductDetails record with modelno: MXF372-2XCB
+2024-07-29 15:58:22,532 - MilwaukeeFileUploader - INFO - UPDATING Digital Assets for model no 2954-20
+2024-07-29 15:58:22,533 - QueryModule - INFO - Updated ProductDetails record with modelno: 2954-20
+2024-07-29 15:58:22,535 - MilwaukeeFileUploader - INFO - UPDATING Digital Assets for model no 48-37-3222H
+2024-07-29 15:58:22,536 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-3222H
+2024-07-29 15:58:22,537 - MilwaukeeFileUploader - INFO - UPDATING Digital Assets for model no 48-22-8427
+2024-07-29 15:58:22,539 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-22-8427
+2024-07-29 15:58:22,540 - MilwaukeeFileUploader - INFO - UPDATING Digital Assets for model no 48-37-1622H
+2024-07-29 15:58:22,541 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-1622H
+2024-07-29 15:58:22,543 - MilwaukeeFileUploader - INFO - UPDATING Digital Assets for model no 48-37-1618H
+2024-07-29 15:58:22,544 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-1618H
+2024-07-29 15:58:22,546 - MilwaukeeFileUploader - INFO - UPDATING Digital Assets for model no MXF372-2XC
+2024-07-29 15:58:22,547 - QueryModule - INFO - Updated ProductDetails record with modelno: MXF372-2XC
+2024-07-29 15:58:22,549 - MilwaukeeFileUploader - INFO - UPDATING Digital Assets for model no 48-37-0718H
+2024-07-29 15:58:22,550 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-0718H
+2024-07-29 15:58:22,551 - MilwaukeeFileUploader - INFO - UPDATING SPEC for model No : 48-37-3218H
+2024-07-29 15:58:22,552 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-3218H
+2024-07-29 15:58:22,553 - MilwaukeeFileUploader - INFO - UPDATING SPEC for model No : 48-37-0722H
+2024-07-29 15:58:22,554 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-0722H
+2024-07-29 15:58:22,555 - MilwaukeeFileUploader - INFO - UPDATING SPEC for model No : 48-37-3222H
+2024-07-29 15:58:22,556 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-3222H
+2024-07-29 15:58:22,557 - MilwaukeeFileUploader - INFO - UPDATING SPEC for model No : 48-37-1622H
+2024-07-29 15:58:22,559 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-1622H
+2024-07-29 15:58:22,559 - MilwaukeeFileUploader - INFO - UPDATING SPEC for model No : 48-37-1618H
+2024-07-29 15:58:22,561 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-1618H
+2024-07-29 15:58:22,562 - MilwaukeeFileUploader - INFO - UPDATING SPEC for model No : 48-37-0718H
+2024-07-29 15:58:22,563 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-37-0718H
+2024-07-29 15:58:22,564 - MilwaukeeFileUploader - INFO - UPDATING SPEC for model No : MXF372-2XCB
+2024-07-29 15:58:22,565 - QueryModule - INFO - Updated ProductDetails record with modelno: MXF372-2XCB
+2024-07-29 15:58:22,566 - MilwaukeeFileUploader - INFO - UPDATING SPEC for model No : MXF372-2XC
+2024-07-29 15:58:22,567 - QueryModule - INFO - Updated ProductDetails record with modelno: MXF372-2XC
+2024-07-29 15:58:22,568 - MilwaukeeFileUploader - INFO - UPDATING SPEC for model No : 2954-20
+2024-07-29 15:58:22,570 - QueryModule - INFO - Updated ProductDetails record with modelno: 2954-20
+2024-07-29 15:58:22,570 - MilwaukeeFileUploader - INFO - UPDATING SPEC for model No : 48-22-8427
+2024-07-29 15:58:22,571 - QueryModule - INFO - Updated ProductDetails record with modelno: 48-22-8427
