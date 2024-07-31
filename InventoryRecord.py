@@ -23,12 +23,14 @@ class InventoryRecord:
         self.id = id  # This will be set after insertion if needed
 
     def insertRecord(self):
-        return (
+        # Convert empty strings to None
+        values = [
             self.MFG_Part_Number, self.GTIN, self.Status, self.Short_Description,
             self.Show_Online_Date, self.Available_to_Ship_Date, self.Brand, self.SubBrand,
             self.CountryCode, self.Warranty, self.Recalled, self.ReplacementModelNo,
             self.PreviousModelNo, self.PreviousUPC, self.OrderUOM, self.MinOrder, self.MulOrder
-        )
+        ]
+        return [value if value != "" else None for value in values]
 
     def buildUpdateQuery(self):
         # Define the dictionary of field names and values
@@ -51,8 +53,8 @@ class InventoryRecord:
             'MulOrder': self.MulOrder
         }
 
-        # Filter out fields with None values
-        non_null_fields = {key: value for key, value in fields.items() if value is not None}
+        # Filter out fields with None values and convert empty strings to None
+        non_null_fields = {key: value if value != "" else None for key, value in fields.items() if value is not None}
 
         if not non_null_fields:
             return None, []

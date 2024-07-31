@@ -15,11 +15,12 @@ class ProductDetailsRecord:
         self.sds = sds
 
     def insertRecord(self):
-        return (
+        values = [
             self.modelno, self.inventory_id, self.search_keywords, self.product_name,
             self.description, self.features, self.includes, self.specs, self.images,
             self.video, self.sds
-        )
+        ]
+        return [value if value != "" else None for value in values]
 
     def buildUpdateQuery(self):
         fields = {
@@ -34,8 +35,8 @@ class ProductDetailsRecord:
             'sds': self.sds
         }
 
-        # Filter out fields with None values
-        non_null_fields = {key: value for key, value in fields.items() if value is not None}
+        # Filter out fields with None values and convert empty strings to None
+        non_null_fields = {key: value if value != "" else None for key, value in fields.items() if value is not None}
 
         if not non_null_fields:
             return None, []

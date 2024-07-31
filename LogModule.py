@@ -1,5 +1,9 @@
 import logging
 
+createdCount = 0
+errrorCount = 0
+errrorList = []
+
 class Logger:
     """
     Set up a logger with console and file handlers.

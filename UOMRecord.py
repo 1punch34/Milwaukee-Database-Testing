@@ -1,33 +1,36 @@
 class UOMRecord:
-    def __init__(self, mfg_part_no, uom, upc, desc=None, quantity=None, weight=None, length =None, width=None, depth=None, height=None, inventory_id=None):
+    def __init__(self, mfg_part_no, uom, upc, desc=None, quantity=None, weight=None, width=None, depth=None, height=None, inventory_id=None):
         self.mfg_part_no = mfg_part_no
         self.desc = desc
         self.quantity = quantity
         self.uom = uom
         self.upc = upc
         self.weight = weight
-        self.length = length
         self.width = width
         self.depth = depth
         self.height = height
         self.inventory_id = inventory_id
 
     def insertRecord(self):
-        return (self.mfg_part_no, self.desc, self.quantity, self.uom, self.upc, self.weight, self.length, self.width, self.depth, self.height, self.inventory_id)
-    
+        values = [
+            self.mfg_part_no, self.desc, self.quantity, self.uom, self.upc, self.weight,
+            self.width, self.depth, self.height, self.inventory_id
+        ]
+        return [value if value != "" else None for value in values]
+
     def updateQuery(self):
         fields = {
             'desc': self.desc,
             'quantity': self.quantity,
             'upc': self.upc,
             'weight': self.weight,
-            'length' : self.length,
             'width': self.width,    
             'depth': self.depth,
             'height': self.height,
         }
-        # Filter out None values
-        non_null_fields = {k: v for k, v in fields.items() if v is not None}
+        
+        # Filter out None values and convert empty strings to None
+        non_null_fields = {key: value if value != "" else None for key, value in fields.items() if value is not None}
         
         if not non_null_fields:
             return None, []

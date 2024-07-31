@@ -1,7 +1,5 @@
 import dateutil.parser
 import openpyxl
-import mysql.connector
-import time
 import dateutil
 import json
 import openpyxl.workbook
@@ -14,10 +12,19 @@ import FileUploader
 
 logger = LogModule.Logger(__name__).logger
 
+
 def openFile(excelfile):
     workbook = openpyxl.open(excelfile)
     logger.info("FILE OPENED")
     return workbook
+
+def get_headers(sheet):
+    header_row = sheet[1]  # Assuming headers are in the first row
+    headers = {}
+    for idx, cell in enumerate(header_row):
+        if cell.value:  # Only add non-empty headers
+            headers[cell.value] = idx
+    return headers
 
 def getInventory(row, header_indices):
     try:
@@ -26,8 +33,19 @@ def getInventory(row, header_indices):
         status_index = header_indices.get('Status', None)
         Status = row[status_index] if status_index is not None and row[status_index] else None
         Short_Description = row[header_indices['Short Description']]
+        Brand = 'Milwaukee'
+        CountryCode = row[header_indices['Country Code - 2 Character code']]
+        subBrand = row[header_indices['Sub-Brand']]
+        warranty = row[header_indices['Manufacturer Warranty']]
+        recalled = row[header_indices['Has Item Been Recalled']] == 'Y'
+        previoussku = row[header_indices['Previous MFG Model #']]
+        previousUPC = row[header_indices['Previous UPC']]
+        minOrderQty = row[header_indices['Minimum Order Quantity']]
+        mulOrderQty = row[header_indices['Multiple Order Quantity']]
+        orderUOM = row[header_indices['Order UOM']]
+
     except Exception as err:
-        logger.error("HEADER ERROR in Inventory query")
+        logger.error(f"HEADER ERROR in Inventory query :  {err}")
     try:
         Show_Online_Date = dateutil.parser.parse(row[header_indices['Show Online Date']]).strftime('%Y-%m-%d')
         Available_to_Ship_Date = dateutil.parser.parse(row[header_indices['Available to Ship Date']]).strftime('%Y-%m-%d')
@@ -38,7 +56,8 @@ def getInventory(row, header_indices):
 
     inventoryRecord = InventoryRecord(
             MFG_Part_Number=MFG_Part_Number, GTIN=GTINCode, Status=Status, Short_Description=Short_Description, 
-            Show_Online_Date=Show_Online_Date, Available_to_Ship_Date=Available_to_Ship_Date,
+            Show_Online_Date=Show_Online_Date, Available_to_Ship_Date=Available_to_Ship_Date, Brand= Brand, CountryCode=CountryCode, SubBrand=subBrand, Warranty=warranty
+            , Recalled=recalled, PreviousModelNo=previoussku, PreviousUPC=previousUPC, MinOrder=minOrderQty, MulOrder=mulOrderQty, OrderUOM=orderUOM
         )
 
     return inventoryRecord
@@ -82,7 +101,7 @@ def getDigitalAssets(row, digitalassetsheader):
             raise KeyError('No Detailed Product View headers found')
         imagesEnd = max(detailed_views_indices)
     except Exception as err:
-        logger.error("HEADER ERROR in Inventory query")
+        logger.error(f"HEADER ERROR in Digital Assets query : {err}")
     # Extract all images between the first hero image and the last detailed product view
     imagesList = row[imageStart:imagesEnd + 1]
     imagesList= [img for img in imagesList if img]
@@ -93,7 +112,7 @@ def getDigitalAssets(row, digitalassetsheader):
     productDetailsRecord = ProductDetailsRecord(modelno=modelno, video=video, sds=safetyDataSheet, images=images)
     return productDetailsRecord
 
-def readUOMs(row, header_indices):
+def getUOMs(row, header_indices):
     mfg_part_no = row[header_indices['MFG Part # (OEM)']] 
     desc = row[header_indices['Short Description']]
     uoms = []
@@ -102,9 +121,11 @@ def readUOMs(row, header_indices):
     package_width = row[header_indices['Package Width (In.)']]
     package_depth = row[header_indices['Package Depth (In.)']]
     package_weight = row[header_indices['Package Weight (Lb.)']]
+    package_quantity = row[header_indices['Net Package Quantity/Net Content']]
+    uom = 'EA' if package_quantity == '1' else f'PK{package_quantity}'
 
-    EachUOM = UOMRecord(mfg_part_no= mfg_part_no, desc= desc, uom='EA', upc= Eachupc, quantity= 1, weight= package_weight, width= package_width, height= package_height, depth= package_depth)
-    uoms.append[EachUOM]
+    EachUOM = UOMRecord(mfg_part_no= mfg_part_no, desc= desc, uom=uom, upc= Eachupc, quantity= package_quantity, weight= package_weight, width= package_width, height= package_height, depth= package_depth)
+    uoms.append(EachUOM)
     # Inner pack details
     inner_pack_upc = row[header_indices['Inner Pack GTIN']]
     inner_pack_quantity = row[header_indices['Inner Pack Quantity']]
@@ -114,7 +135,7 @@ def readUOMs(row, header_indices):
     inner_pack_weight = row[header_indices['Inner Pack Weight (Lb.)']]
     
     if inner_pack_quantity:
-        IpUom = UOMRecord(mfg_part_no=mfg_part_no, desc=desc, upc= inner_pack_upc, uom= f'IP{inner_pack_quantity}', height = inner_pack_height, depth=inner_pack_depth, width=inner_pack_width, weight=inner_pack_weight)    
+        IpUom = UOMRecord(mfg_part_no=mfg_part_no, desc=desc, quantity=inner_pack_quantity, upc= inner_pack_upc, uom= f'IP{inner_pack_quantity}', height = inner_pack_height, depth=inner_pack_depth, width=inner_pack_width, weight=inner_pack_weight)    
         uoms.append(IpUom)
     # Case details
     case_upc = row[header_indices['Case GTIN']]
@@ -131,7 +152,7 @@ def readUOMs(row, header_indices):
     
     return uoms
 
-def readSpecs(row, header_indices):
+def getSpecs(row, header_indices):
     MFG_Part_Number = row[header_indices['MFG Part # (OEM)']]
     specDict = {}
     for header_name, index in header_indices.items():
@@ -146,24 +167,72 @@ def readSpecs(row, header_indices):
     productDetails = ProductDetailsRecord(modelno= MFG_Part_Number, specs=specs)
     return productDetails
 
-
 def productInformationSheet(workbook, conn):
+    logger.info("READING PRODUCT INFORMATION SHEET")
     productInformationSheet = workbook['Product Information']
-    headers = [cell.value for cell in productInformationSheet[1]]
     # Create a dictionary to map header names to column indices
-    header_indices = {header: idx for idx, header in enumerate(headers)} 
+    header_indices = get_headers(productInformationSheet)
+    queryModule = QueryModule(conn)
+
     for row in productInformationSheet.iter_rows(min_row=2, max_row=productInformationSheet.max_row, values_only=True):
         MFG_Part_Number = row[header_indices['MFG Part # (OEM)']]
         if MFG_Part_Number is None:
             continue
         try:
-            (row , header_indices, conn)
-            productInfoQuery(row , header_indices, conn)
-            # addUOMs(row,header_indices,cursor,conn)
+            #Read Inventory values and run inventory query
+            inventoryRecord = getInventory(row, header_indices)
+            FileUploader.inventoryQuery(inventoryRecord, queryModule)
+            #read product detail values and call productdetails query
+            productDetailsRecord = getproductInfo(row, header_indices)
+            FileUploader.productInfoQuery(productDetailsRecord, queryModule)
+            #read uoms
+            uomsRecords = getUOMs(row, header_indices)
+            for uom in uomsRecords:
+                FileUploader.UOMquery(uom, queryModule)
         except Exception as err:
             logger.error(f"Funciton Error @ProductInfoSheet: {err}")
         print("============================000000000000=============================  \n\n\n")
 
+def digitalAssetsSheet(workbook, conn):
+    logger.info("READING DIGITAL ASSETS SHEET")
+    digitalAssetsSheet = workbook['Digital Assets']
+    digitalAssetsHeaders_indices = get_headers(digitalAssetsSheet)
+    queryModule = QueryModule(conn)
+    for row in digitalAssetsSheet.iter_rows(min_row=2, max_row=digitalAssetsSheet.max_row, values_only= True):
+        MFG_Part_Number = row[digitalAssetsHeaders_indices['MFG Part # (OEM)']]
+        if MFG_Part_Number is None:
+            continue            
+        try:
+            #Reads digital Assets and updates/inserts productdetailsrecord
+            productDetailsRecord = getDigitalAssets(row, digitalAssetsHeaders_indices)
+            FileUploader.productInfoQuery(productDetailsRecord, queryModule)
+        except Exception as err:
+            logger.error(f"Funciton Error @DigitalAssetsSheet: {err}")
+        print("============================000000000000=============================  \n\n\n")
+
+def specSheets(workbook, conn):
+
+    logger.info("READING SPEC SHEETS")
+    queryModule = QueryModule(conn)
+
+    excluded_sheets = {"Product Information", "FR Product Information", "Digital Assets", "Digital Assets FR"}
+    for sheet_name in workbook.sheetnames:
+        if sheet_name in excluded_sheets:
+            continue
+        specSheet = workbook[sheet_name]
+        # Create a dictionary to map header names to column indices
+        specheader_indices = get_headers(specSheet)
+
+        for row in specSheet.iter_rows(min_row=2, max_row=specSheet.max_row, values_only= True):
+            MFG_Part_Number = row[specheader_indices['MFG Part # (OEM)']]
+            if MFG_Part_Number is None:
+                continue            
+            try:
+                productDetailsRecord = getSpecs(row, specheader_indices)
+                FileUploader.productInfoQuery(productDetailsRecord, queryModule)
+            except Exception as err:
+                logger.error(f"Funciton Error @SpecSheet:{sheet_name} : {err}")
+            print("============================000000000000=============================  \n\n\n")
 
 def readFile(excelfile):
 
@@ -174,56 +243,7 @@ def readFile(excelfile):
         logger.error("No Connection with Databse")
         return None
     
-    productInformationSheet = workbook['Product Information']
-    headers = [cell.value for cell in productInformationSheet[1]]
-    # Create a dictionary to map header names to column indices
-    header_indices = {header: idx for idx, header in enumerate(headers)} 
-    
-    for row in productInformationSheet.iter_rows(min_row=2, max_row=productInformationSheet.max_row, values_only=True):
-        MFG_Part_Number = row[header_indices['MFG Part # (OEM)']]
-        if MFG_Part_Number is None:
-            continue
-        try:
-            inventoryQuery(row , header_indices, conn)
-            productInfoQuery(row , header_indices, conn)
-            # addUOMs(row,header_indices,cursor,conn)
-        except Exception as err:
-            logger.error(f"Funciton Error @ProductInfoSheet: {err}")
-        print("============================000000000000=============================  \n\n\n")
-
-
-    digitalAssetsSheet = workbook['Digital Assets']
-    digitalAssetsHeaders = [cell.value for cell in digitalAssetsSheet[1]]
-    digitalAssetsHeaders_indices = {digitalAssetsHeader: idx for idx, digitalAssetsHeader in enumerate(digitalAssetsHeaders)}
-
-    for row in digitalAssetsSheet.iter_rows(min_row=2, max_row=digitalAssetsSheet.max_row, values_only= True):
-        MFG_Part_Number = row[header_indices['MFG Part # (OEM)']]
-        if MFG_Part_Number is None:
-            continue            
-        try:
-            digitalAssetsQuery(row,digitalAssetsHeaders_indices, conn)
-        except Exception as err:
-            logger.error(f"Funciton Error @DigitalAssetsSheet: {err}")
-        print("============================000000000000=============================  \n\n\n")
-
-
-    excluded_sheets = {"Product Information", "FR Product Information", "Digital Assets", "Digital Assets FR"}
-    for sheet_name in workbook.sheetnames:
-        if sheet_name in excluded_sheets:
-            continue
-        specSheet = workbook[sheet_name]
-        specheaders = [cell.value for cell in specSheet[1]]
-        # Create a dictionary to map header names to column indices
-        specheader_indices = {header: idx for idx, header in enumerate(specheaders)} 
-
-        for row in specSheet.iter_rows(min_row=2, max_row=specSheet.max_row, values_only= True):
-            MFG_Part_Number = row[specheader_indices['MFG Part # (OEM)']]
-            if MFG_Part_Number is None:
-                continue            
-            try:
-                addSpecs(row, specheader_indices,conn)
-            except Exception as err:
-                logger.error(f"Funciton Error @SpecSheet:{sheet_name} : {err}")
-            print("============================000000000000=============================  \n\n\n")
-    
+    productInformationSheet(workbook, conn)
+    digitalAssetsSheet(workbook, conn)
+    specSheets(workbook, conn)
     conn.close()
