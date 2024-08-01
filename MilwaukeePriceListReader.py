@@ -56,7 +56,7 @@ def readsheet(workbook, conn):
 
 
 def readFile(excelfile):
-
+    LogModule.LogData.startTimer(logger)
     workbook = openFile(excelfile)
     conn = FileUploader.connect()
     

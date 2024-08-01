@@ -16,11 +16,11 @@ class UOMRecord:
             self.mfg_part_no, self.desc, self.quantity, self.uom, self.upc, self.weight,
             self.width, self.depth, self.height, self.inventory_id
         ]
-        return [value if value != "" else None for value in values]
+        return [value if value not in ("", None) else None for value in values]
 
     def updateQuery(self):
         fields = {
-            'desc': self.desc,
+            '`desc`': self.desc,
             'quantity': self.quantity,
             'upc': self.upc,
             'weight': self.weight,

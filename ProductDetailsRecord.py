@@ -20,7 +20,7 @@ class ProductDetailsRecord:
             self.description, self.features, self.includes, self.specs, self.images,
             self.video, self.sds
         ]
-        return [value if value != "" else None for value in values]
+        return [value if value not in ("", None) else None for value in values]
 
     def buildUpdateQuery(self):
         fields = {

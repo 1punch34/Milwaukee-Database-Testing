@@ -4,9 +4,11 @@ import openpyxl
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import ttk
+from tkinter import scrolledtext
 import os
 import json
 import FileUploader
+import LogModule
 
 class File:
     def __init__(self, file_path):
@@ -48,6 +50,9 @@ class FileExplorerApp:
         self.convertSelectedFiles = tk.Button(self.buttonFrame, text="Upload File", command=self.upload_selected_file, width=20, height=2, background="firebrick2")
         self.convertSelectedFiles.pack(pady=12)
 
+        self.dropdown_var = tk.StringVar()
+        self.dropdown = ttk.Combobox(self.buttonFrame, textvariable=self.dropdown_var, values=["Milwaukee Product Information", "Milwaukee Price List"])
+        self.dropdown.pack(pady = 12)
         # Placeholder button
         self.functionButton = tk.Button(self.buttonFrame, text="Open File", command=self.open_selected_file, width=20, height=2)
         self.functionButton.pack(pady=12)
@@ -70,7 +75,10 @@ class FileExplorerApp:
 
         # Load favorite files from JSON file
         self.openFavoriteFiles()
-
+    
+    def getFileReader(self):
+        return self.dropdown_var.get()
+    
     def open_file_explorer(self):
         filenames = filedialog.askopenfilenames(initialdir="/", title="Select files")
         if filenames:
@@ -93,15 +101,32 @@ class FileExplorerApp:
         global selected_files
         items = self.openedFilesWindow.selection()
         selected_files = [self.openedFilesWindow.item(item, "values")[1] for item in items]
+    
+    def show_log_popup(self, log_data):
+        popup = tk.Toplevel(self.master)
+        popup.title("Log Data")
+        text_area = scrolledtext.ScrolledText(popup, wrap=tk.WORD, width=40, height=10)
+        text_area.pack(expand=True, fill="both")
+
+        # Insert the log data into the text area
+        text_area.insert(tk.END, log_data)
+
+        # Optionally make the text area read-only
+        text_area.config(state=tk.DISABLED)
+    
 
     def upload_selected_file(self):
-        # try:
         if selected_files is not None:
-            for selected_file in selected_files:
-                if selected_file:
-                    print(f"Uploading file: {selected_file}")
-                    FileUploader.addFiletoDatabase(selected_file)
-                    messagebox.showinfo("upload Status", "Success")
+            for file in selected_files:
+                if file:
+                    fileReader = self.getFileReader()
+                    if fileReader:
+                        print(f"Uploading file: {file}")
+                        FileUploader.addFiletoDatabase(file, fileReader)
+                        log_data = LogModule.LogData.getLogData()
+                        self.show_log_popup(log_data)
+                    else:
+                        messagebox.showinfo("Error", "No File Reader Selected")
 
     def convert_selected_file(self):
         # try:
@@ -169,8 +194,6 @@ class FileExplorerApp:
         with open("favorite_files.json", "w") as f:
             json.dump(data, f)
     
-    def undefinedFunction(self):
-        pass
 
     def close_app(self):
         # Save favorite files before closing the application

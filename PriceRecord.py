@@ -9,7 +9,7 @@ class PriceRecord:
         self.inventory_id = inventory_id
 
     def insertRecord(self):
-        return (
+        values = (
             self.modelno,
             self.description,
             self.status,
@@ -18,7 +18,8 @@ class PriceRecord:
             self.list_price,
             self.inventory_id
         )
-
+        return [value if value not in ("", None) else None for value in values]
+    
     def buildUpdateQuery(self):
         fields = {
             'description': self.description,

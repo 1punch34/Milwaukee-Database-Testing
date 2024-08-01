@@ -82,10 +82,15 @@ def connect():
         logger.info("Failed to connect: %s", err)
         return None
 
-def addFiletoDatabase(excelfile):
+def addFiletoDatabase(excelfile, fileReader):
+  
+    if fileReader == 'Milwaukee Product Information':
+        print(fileReader)
+        MilwaukeeFileReader.readFile(excelfile)
+    elif fileReader == 'Milwaukee Price List':
+        MilwaukeePriceListReader.readFile(excelfile)
     
-    MilwaukeePriceListReader.readFile(excelfile)
-
+    logger.info(LogModule.LogData.getLogData())
 
 
 

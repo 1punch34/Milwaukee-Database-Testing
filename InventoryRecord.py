@@ -30,7 +30,7 @@ class InventoryRecord:
             self.CountryCode, self.Warranty, self.Recalled, self.ReplacementModelNo,
             self.PreviousModelNo, self.PreviousUPC, self.OrderUOM, self.MinOrder, self.MulOrder
         ]
-        return [value if value != "" else None for value in values]
+        return [value if value not in ("", None) else None for value in values]
 
     def buildUpdateQuery(self):
         # Define the dictionary of field names and values

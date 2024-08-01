@@ -113,45 +113,47 @@ def getDigitalAssets(row, digitalassetsheader):
     return productDetailsRecord
 
 def getUOMs(row, header_indices):
-    mfg_part_no = row[header_indices['MFG Part # (OEM)']] 
-    desc = row[header_indices['Short Description']]
-    uoms = []
-    Eachupc = row[header_indices['UPC']]
-    package_height = row[header_indices['Package Height (In.)']]
-    package_width = row[header_indices['Package Width (In.)']]
-    package_depth = row[header_indices['Package Depth (In.)']]
-    package_weight = row[header_indices['Package Weight (Lb.)']]
-    package_quantity = row[header_indices['Net Package Quantity/Net Content']]
-    uom = 'EA' if package_quantity == '1' else f'PK{package_quantity}'
+    try:
+        mfg_part_no = row[header_indices['MFG Part # (OEM)']] 
+        desc = row[header_indices['Short Description']]
+        uoms = []
+        Eachupc = row[header_indices['UPC']]
+        package_height = row[header_indices['Package Height (In.)']]
+        package_width = row[header_indices['Package Width (In.)']]
+        package_depth = row[header_indices['Package Depth (In.)']]
+        package_weight = row[header_indices['Package Weight (Lb.)']]
+        package_quantity = row[header_indices['Net Package Quantity/Net Content']]
+        uom = 'EA' if package_quantity == '1' else f'PK{package_quantity}'
 
-    EachUOM = UOMRecord(mfg_part_no= mfg_part_no, desc= desc, uom=uom, upc= Eachupc, quantity= package_quantity, weight= package_weight, width= package_width, height= package_height, depth= package_depth)
-    uoms.append(EachUOM)
-    # Inner pack details
-    inner_pack_upc = row[header_indices['Inner Pack GTIN']]
-    inner_pack_quantity = row[header_indices['Inner Pack Quantity']]
-    inner_pack_height = row[header_indices['Inner Pack Height (In.)']]
-    inner_pack_width = row[header_indices['Inner Pack Width (In.)']]
-    inner_pack_depth = row[header_indices['Inner Pack Depth (In.)']]
-    inner_pack_weight = row[header_indices['Inner Pack Weight (Lb.)']]
-    
-    if inner_pack_quantity:
-        IpUom = UOMRecord(mfg_part_no=mfg_part_no, desc=desc, quantity=inner_pack_quantity, upc= inner_pack_upc, uom= f'IP{inner_pack_quantity}', height = inner_pack_height, depth=inner_pack_depth, width=inner_pack_width, weight=inner_pack_weight)    
-        uoms.append(IpUom)
-    # Case details
-    case_upc = row[header_indices['Case GTIN']]
-    case_quantity = row[header_indices['Case Quantity']]
-    case_height = row[header_indices['Case Height (In.)']]
-    case_width = row[header_indices['Case Width (In.)']]
-    case_depth = row[header_indices['Case Depth (In.)']]
-    case_weight = row[header_indices['Case Weight (Lb.)']]
-    
-    if case_quantity:
-        caseUOM = UOMRecord(mfg_part_no=mfg_part_no, desc=desc, quantity= case_quantity, uom=f'CASE{case_quantity}', upc = case_upc, weight= case_weight, height= case_height,
-                            width= case_width, depth=case_depth)
-        uoms.append(caseUOM)
-    
-    return uoms
-
+        EachUOM = UOMRecord(mfg_part_no= mfg_part_no, desc= desc, uom=uom, upc= Eachupc, quantity= package_quantity, weight= package_weight, width= package_width, height= package_height, depth= package_depth)
+        uoms.append(EachUOM)
+        # Inner pack details
+        inner_pack_upc = row[header_indices['Inner Pack GTIN']]
+        inner_pack_quantity = row[header_indices['Inner Pack Quantity']]
+        inner_pack_height = row[header_indices['Inner Pack Height (In.)']]
+        inner_pack_width = row[header_indices['Inner Pack Width (In.)']]
+        inner_pack_depth = row[header_indices['Inner Pack Depth (In.)']]
+        inner_pack_weight = row[header_indices['Inner Pack Weight (Lb.)']]
+        
+        if inner_pack_quantity:
+            IpUom = UOMRecord(mfg_part_no=mfg_part_no, desc=desc, quantity=inner_pack_quantity, upc= inner_pack_upc, uom= f'IP{inner_pack_quantity}', height = inner_pack_height, depth=inner_pack_depth, width=inner_pack_width, weight=inner_pack_weight)    
+            uoms.append(IpUom)
+        # Case details
+        case_upc = row[header_indices['Case GTIN']]
+        case_quantity = row[header_indices['Case Quantity']]
+        case_height = row[header_indices['Case Height (In.)']]
+        case_width = row[header_indices['Case Width (In.)']]
+        case_depth = row[header_indices['Case Depth (In.)']]
+        case_weight = row[header_indices['Case Weight (Lb.)']]
+        
+        if case_quantity:
+            caseUOM = UOMRecord(mfg_part_no=mfg_part_no, desc=desc, quantity= case_quantity, uom=f'CASE{case_quantity}', upc = case_upc, weight= case_weight, height= case_height,
+                                width= case_width, depth=case_depth)
+            uoms.append(caseUOM)
+        
+        return uoms
+    except Exception as err:
+        logger.error(f"Error Reading Uoms : {err}")
 def getSpecs(row, header_indices):
     MFG_Part_Number = row[header_indices['MFG Part # (OEM)']]
     specDict = {}
@@ -191,6 +193,7 @@ def productInformationSheet(workbook, conn):
                 FileUploader.UOMquery(uom, queryModule)
         except Exception as err:
             logger.error(f"Funciton Error @ProductInfoSheet: {err}")
+            LogModule.Logger.errortrace(logger,err)
         print("============================000000000000=============================  \n\n\n")
 
 def digitalAssetsSheet(workbook, conn):
@@ -235,7 +238,7 @@ def specSheets(workbook, conn):
             print("============================000000000000=============================  \n\n\n")
 
 def readFile(excelfile):
-
+    LogModule.LogData.startTimer(logger)
     workbook = openFile(excelfile)
     conn = FileUploader.connect()
     
